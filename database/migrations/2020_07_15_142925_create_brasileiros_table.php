@@ -22,7 +22,7 @@ class CreateBrasileirosTable extends Migration
             $table->string('celular')->nullable();
             $table->decimal('quanto_ganhava')->nullable();
             $table->string('enderco')->nullable();
-            $table->string('cidade')->nullable()
+            $table->string('cidade')->nullable();
             $table->string('estado')->nullable();
             $table->string('banco')->nullable();
             $table->string('agencia')->nullable();
