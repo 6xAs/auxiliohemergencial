@@ -6,7 +6,16 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Solicitar Auxílio  | <a href="/home-auxilio">HOME</a></div>
-
+                {{--  Menssagem de Error  --}}
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
                 <div class="card-body">
                     <form method="POST" action="/solicitar-auxilio">
                         @csrf

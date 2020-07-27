@@ -59,6 +59,23 @@ class BrasileiroController extends Controller
         $agencia                = $request->input('agencia');
         $conta_corrente         = $request->input('conta_corrente');
 
+        // Validação dos dados 000.000.000-00
+        $request->validate([
+            'nome'                    => 'required|max:255',
+            'cpf'                     => 'required|unique:brasileiros|max:11|min:11',
+            'data_nascimento'         => 'required|date',
+            'nome_mae'                => 'required|max:255',
+            'celular'                 => 'required|max:20',
+            'quanto_ganhava'          => 'required|max:10|numeric',
+            'enderco'                 => 'required|max:255',
+            'cidade'                  => 'required|max:255',
+            'estado'                  => 'required|max:255',
+            'banco'                   => 'required|max:20',
+            'agencia'                 => 'required|max:20',
+            'conta_corrente'          => 'required|max:20',
+
+        ]);
+
         // Inserir no DB
         DB::table('brasileiros')->insert(
             [
