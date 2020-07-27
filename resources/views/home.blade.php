@@ -14,6 +14,7 @@
                         </div>
                     @endif
                     <div>
+
                         <h2>O que você deseja fazer?</h2>
                         <div>
                             <a href="/solicitar-auxilio"><button>Solicitar Auxílio</button></a>

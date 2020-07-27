@@ -58,6 +58,20 @@
                 text-decoration: none;
                 text-transform: uppercase;
             }
+            .button {
+                background-color: #4346e4;
+                border-radius: 3px;
+                border: none;
+                color: white;
+                padding: 10px;
+                font-family: 'Nunito', sans-serif;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
 
             .m-b-md {
                 margin-bottom: 30px;
@@ -82,19 +96,20 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Hello!!
+                    Auxílio Hemergencial do Governo Federal
+
+
+                </div>
+                <div>
+                    <a href="/register"><button class="button">Cadastre-se</button></a>
                 </div>
 
                 <div class="links">
 
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="#">Calendários</a>
+                    <a href="#">O que é?</a>
+                    <a href="#">Fale Conosco</a>
+
                 </div>
             </div>
         </div>
